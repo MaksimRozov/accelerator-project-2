@@ -1,4 +1,33 @@
-// Vendor
-// ---------------------------------
+// VENDOR
 
 @import "vendor/normalize";
+
+// GLOBAL
+
+@import "global/page";
+@import "global/variables";
+@import "global/visually-hidden";
+@import "global/fonts";
+@import "global/mixin";
+@import "global/container";
+
+// BLOCKS
+
+@import "blocks/main-header";
+@import "blocks/menu";
+@import "blocks/hero";
+@import "blocks/main-carousel";
+@import "blocks/button";
+@import "blocks/tours";
+@import "blocks/training";
+@import "blocks/card-training";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/card-review";
+@import "blocks/advantages";
+@import "blocks/title-main";
+@import "blocks/card-advantages";
+@import "blocks/gallery";
+@import "blocks/form-block";
+@import "blocks/form";
+@import "blocks/main-footer";
