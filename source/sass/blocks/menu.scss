@@ -1,0 +1,61 @@
+.menu {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  background-color: $additional-color;
+  padding-left: 15px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+    top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    position: unset;
+  }
+}
+
+.menu__list {
+  @include list-style-none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 12px;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+}

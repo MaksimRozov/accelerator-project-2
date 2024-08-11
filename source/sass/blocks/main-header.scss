@@ -1,0 +1,102 @@
+.main-header {
+  background-color: $additional-color;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.main-header__navigation {
+  display: none;
+  order: 2;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 0;
+    width: 625px;
+    margin-left: 152px;
+    margin-top: 4px;
+  }
+}
+
+.main-header__burger {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../__spritemap#sprite-burger-view");
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: $white-color;
+  text-decoration: none;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-left: auto;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  width: 142px;
+  margin-left: auto;
+  margin-bottom: 16px;
+
+  svg {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 129px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 32px;
+  }
+}

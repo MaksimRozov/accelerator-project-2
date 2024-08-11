@@ -10,52 +10,107 @@
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <button class="main-header__burger" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <a class="main-header__logo" href="/">
-      <img src="#" alt="Логотип кампании." width="142" height="42">
-    </a>
-    <nav class="main-header__navigation menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">Туры</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Обучение</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">О нас</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Отзывы</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Фотографии</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="main-header__tel" href="tel:+78000000000">8 800 000-00-00</a>
+    <div class="main-header__wrapper container">
+      <button class="main-header__burger" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="main-header__logo" href="/">
+        <svg width="142" height="42" role="img" aria-label="Логотип кампании.">
+          <use href="/__spritemap#sprite-logo-header"></use>
+        </svg>
+      </a>
+      <nav class="main-header__navigation menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#tours">Туры</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#training">Обучение</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="main-header__tel" href="tel:+78000000000">8 800 000-00-00</a>
+    </div>
   </header>
   <main class="page__main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Организация походов в горы</h1>
-      <div class="hero__carousel main-carousel">
-        <div class="main-carousel__item">
-          <p>Захватывающие вершины Кавказа</p>
-          <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-          <a class="hero__button button button--main" href="#">Смотреть тур</a>
-          <div class="hero__group-info">
-            <div class="hero__info-item hero__info-item--duration">6 дней/5 ночей</div>
-            <div class="hero__info-item hero__info-item--difficulty">Высокая сложность</div>
+      <div class="hero__carousel main-carousel swiper">
+        <div class="swiper-wrapper">
+          <div class="main-carousel__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1365px)" type="image/webp" width="1440" height="800" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x">
+              <source media="(min-width: 1365px)" type="image/jpeg" width="1440" height="800" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
+              <source media="(min-width: 767px)" type="image/webp" width="768" height="1034" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+              <source media="(min-width: 767px)" type="image/jpeg" width="768" height="1034" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
+              <source type="image/webp" width="320" height="568" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x">
+              <img width="320" height="568" src="img/hero-mobile@1x.jpg" loading="lazy" srcset="img/hero-mobile@2x.jpg 2x" alt="Синее небо и горы окутанные облаками.">
+            </picture>
+            <div class="main-carousel__content">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдёте<br> через потрясающие ландшафты и совершите восход<br> на вершину горы Чегет.</p>
+              <a class="main-carousel__button button button--main" href="#">Смотреть тур</a>
+              <div class="main-carousel__group-info">
+                <div class="main-carousel__info-item main-carousel__info-item--duration">6 дней/5 ночей</div>
+                <div class="main-carousel__info-item main-carousel__info-item--difficulty">Высокая сложность</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-carousel__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1365px)" type="image/webp" width="1440" height="800" srcset="img/hero-desktop2@1x.webp 1x, img/hero-desktop2@2x.webp 2x">
+              <source media="(min-width: 1365px)" type="image/jpeg" width="1440" height="800" srcset="img/hero-desktop2@1x.jpg 1x, img/hero-desktop2@2x.jpg 2x">
+              <source media="(min-width: 767px)" type="image/webp" width="768" height="1034" srcset="img/hero-tablet2@1x.webp 1x, img/hero-tablet2@2x.webp 2x">
+              <source media="(min-width: 767px)" type="image/jpeg" width="768" height="1034" srcset="img/hero-tablet2@1x.jpg 1x, img/hero-tablet2@2x.jpg 2x">
+              <source type="image/webp" width="320" height="568" srcset="img/hero-mobile2@1x.webp 1x, img/hero-mobile2@2x.webp 2x">
+              <img width="320" height="568" src="img/hero-mobile2@1x.jpg" loading="lazy" srcset="img/hero-mobile2@2x.jpg 2x" alt="Горы в облаках.">
+            </picture>
+            <div class="main-carousel__content">
+              <p>Невероятная природа Камчатки</p>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+              <a class="main-carousel__button button button--main" href="#">Смотреть тур</a>
+              <div class="main-carousel__group-info">
+                <div class="main-carousel__info-item hero__info-item--duration">6 дней/5 ночей</div>
+                <div class="main-carousel__info-item hero__info-item--difficulty">Высокая сложность</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-carousel__item swiper-slide">
+            <picture>
+              <source media="(min-width: 1365px)" type="image/webp" width="1440" height="800" srcset="img/hero-desktop3@1x.webp 1x, img/hero-desktop3@2x.webp 2x">
+              <source media="(min-width: 1365px)" type="image/jpeg" width="1440" height="800" srcset="img/hero-desktop3@1x.jpg 1x, img/hero-desktop3@2x.jpg 2x">
+              <source media="(min-width: 767px)" type="image/webp" width="768" height="1034" srcset="img/hero-tablet3@1x.webp 1x, img/hero-tablet3@2x.webp 2x">
+              <source media="(min-width: 767px)" type="image/jpeg" width="768" height="1034" srcset="img/hero-tablet3@1x.jpg 1x, img/hero-tablet3@2x.jpg 2x">
+              <source type="image/webp" width="320" height="568" srcset="img/hero-mobile@x1.webp 1x, img/hero-mobile3@2x.webp 2x">
+              <img width="320" height="568" src="img/hero-mobile3@1x.jpg" loading="lazy" srcset="img/hero-mobile3@2x.jpg 2x" alt="Красива горная река, которая тянется между гор и зеленых насаждений.">
+            </picture>
+            <div class="main-carousel__content">
+              <p>Захватывающие вершины Кавказа</p>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+              <a class="main-carousel__button button button--main" href="#">Смотреть тур</a>
+              <div class="main-carousel__group-info">
+                <div class="main-carousel__info-item hero__info-item--duration">6 дней/5 ночей</div>
+                <div class="main-carousel__info-item hero__info-item--difficulty">Высокая сложность</div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="main-carousel__pagination swiper-pagination"></div>
       </div>
     </section>
-    <section class="tours" data-test="tours">
+    <section class="tours" data-test="tours" id="tours">
       <h2 class="tours__title title-main">Ближайшие туры</h2>
       <div class="tours__carousel">
         <div class="tours__item card-tour">
@@ -89,7 +144,7 @@
       </div>
       <a class="button button--more" href="#">Показать все туры</a>
     </section>
-    <section class="training" data-test="training">
+    <section class="training" data-test="training" id="training">
       <div class="training__education">
         <h2 class="training__title title-main">Обучение</h2>
         <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
@@ -120,7 +175,7 @@
         </ul>
       </div>
     </section>
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__images">
         <img src="#" width="320" height="434" alt="Четыре туриста прогуливаются среди живописных гор, окружённых белыми облаками. На заднем плане изумрудное озеро.">
       </div>
@@ -130,7 +185,7 @@
       <h3>Наша цель</h3>
       <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
     </section>
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <h2 class="reviews__title title-main">Отзывы</h2>
       <div class="reviews__carousel">
         <div class="reviews__item card-review">
@@ -175,7 +230,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <h2 class="gallery__title title-main">Фотогалерея</h2>
       <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
       <div class="gallery__carousel">
@@ -218,7 +273,7 @@
       </form>
     </section>
   </main>
-  <footer class="main-footer" data-test="footer">
+  <footer class="main-footer" data-test="footer" id="contacts">
     <div class="main-footer__contacts">
       <h2 class="main-footer__title">Контакты</h2>
       <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>

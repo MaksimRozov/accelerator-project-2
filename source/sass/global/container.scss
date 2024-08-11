@@ -1,4 +1,4 @@
-.container-page {
+.container {
   width: 100%;
   min-width: 320px;
   padding-right: 15px;
@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1366px;
-    padding-right: 103px;
-    padding-left: 103px;
+    max-width: 1440px;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }
