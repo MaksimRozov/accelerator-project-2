@@ -1,16 +1,18 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
-
-import { mainSlider } from './modules/sliders/main-slider';
+import { sliderMain } from './modules/sliders/slider-main';
 import { initNav } from './modules/menu-mobile';
+import { sliderTours } from './modules/sliders/slider-tours';
+import { sliderTraining } from './modules/sliders/slider-training';
+import { sliderReviews } from './modules/sliders/slider-reviews';
+import { sliderGallery } from './modules/sliders/slider-gallery';
 
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
-    mainSlider();
+    sliderMain();
     initNav();
+    sliderTours();
+    sliderTraining();
+    sliderReviews();
+    sliderGallery();
   });
 });

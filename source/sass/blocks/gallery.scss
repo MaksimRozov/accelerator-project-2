@@ -1,0 +1,36 @@
+.gallery__title {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.gallery {
+  margin-top: 57px;
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    margin-bottom: 31px;
+  }
+
+  img {
+    height: auto;
+  }
+}
+
+.gallery__item img {
+  width: 158px;
+  height: 265px;
+}
+
+.gallery__image--top img {
+  width: 157px;
+  height: 135px;
+  margin-bottom: 6px;
+}
+
+.gallery__image--bottom img {
+  width: 158px;
+  height: 124px;
+}

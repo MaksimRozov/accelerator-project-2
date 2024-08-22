@@ -1,0 +1,36 @@
+.title-main {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 100%;
+  color: $primary-color;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    display: inline-block;
+    position: absolute;
+    font-weight: 800;
+    font-size: 26px;
+    top: -16px;
+    left: 0;
+    line-height: 100%;
+    color: #2d383f;
+    opacity: 0.03;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+  }
+}

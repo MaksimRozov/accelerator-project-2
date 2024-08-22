@@ -2,14 +2,24 @@
   color: $white-color;
   background-color: $additional-color;
   position: relative;
+  min-height: 568px;
+
+  img {
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 801px;
+  }
 }
 
 .main-carousel__content {
-  position: absolute;
-  top: 25%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 2px;
+  position: relative;
+  padding-top: 144px;
   text-align: center;
 
   h2 {
@@ -27,22 +37,17 @@
     @media (min-width: $desktop-width) {
       font-size: 77px;
       margin-bottom: 23px;
+      padding-right: 72px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    top: 33%;
-    padding-top: 1px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-top: 342px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 25%;
-    width: 1060px;
     text-align: left;
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-top: 201px;
   }
 }
 
@@ -148,8 +153,8 @@
 }
 
 .main-carousel__dots {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid $white-color;
