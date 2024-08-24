@@ -18,10 +18,30 @@
   p:last-child {
     margin-bottom: 16px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+    padding: 19px;
+    max-width: 565px;
+    padding-left: 20px;
+
+    p:last-child {
+      margin-bottom: 26px;
+    }
+  }
 }
 
 .card-review__image {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    img {
+      width: 186px;
+    }
+  }
 }
 
 .card-review__author-title {
@@ -30,10 +50,20 @@
   line-height: 100%;
   margin: 0;
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+  }
 }
 
 .card-review__author-add-info {
   font-weight: 300;
   font-size: 12px;
   line-height: 100%;
+}
+
+.card-reviews__content {
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
 }

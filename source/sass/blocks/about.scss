@@ -4,15 +4,9 @@
   flex-direction: column;
   gap: 16px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
-
   &::before {
     content: "";
     display: block;
-
     height: 400px;
     /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
     background-image: image-set(
@@ -22,6 +16,27 @@
       url("../../img/about/about-mobile@2x.jpg") type("image/jpg") 2x
     );
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding-top: 77px;
+
+    &::before {
+      flex: 1 0 58%;
+      align-self: center;
+      margin-bottom: 39px;
+      /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+      background-image: image-set(
+        url("../../img/about/about-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/about/about-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/about/about-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../img/about/about-tablet@2x.jpg") type("image/jpg") 2x
+      );
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -72,5 +87,31 @@
     color: $primary-color;
     margin: 0;
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    flex: 1 0 41%;
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 47px;
+    }
+
+    h2::after {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 270px;
+      line-height: 24px;
+      margin-bottom: 28px;
+    }
   }
 }

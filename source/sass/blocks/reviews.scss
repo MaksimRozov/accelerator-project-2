@@ -1,10 +1,18 @@
 .reviews {
   padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 73px;
+  }
 }
 
 .reviews__title {
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .reviews__carousel {
@@ -12,11 +20,23 @@
 }
 
 .reviews__carousel-control-panel {
-  position: absolute;
-  top: -54px;
+  @media (min-width: $tablet-width) {
+    top: -47px;
+    right: 45px;
+  }
 }
 
 .reviews__carousel .reviews__slider {
   padding: 5px 15px 2px;
-  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 45px;
+    width: unset;
+  }
+}
+
+.reviews__carousel .reviews__item {
+  @media (min-width: $tablet-width) {
+    width: 83%;
+  }
 }

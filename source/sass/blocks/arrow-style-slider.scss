@@ -1,11 +1,7 @@
 .arrow-style-slider {
-  &--top-right {
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    right: 0;
-    gap: 4px;
-  }
+  display: flex;
+  position: absolute;
+  gap: 4px;
 }
 
 .arrow-style-slider__button {

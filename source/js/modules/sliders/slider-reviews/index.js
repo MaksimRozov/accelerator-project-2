@@ -14,6 +14,7 @@ const sliderReviews = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 1000,
+      loop: false,
       navigation: {
         nextEl: '.reviews__carousel-next',
         prevEl: '.reviews__carousel-prev',
@@ -29,9 +30,9 @@ const sliderReviews = () => {
         },
 
         768: {
-          slidesPerView: 2,
-          spaceBetween: 18,
-          simulateTouch: false,
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+          allowTouchMove: true
 
         },
 
