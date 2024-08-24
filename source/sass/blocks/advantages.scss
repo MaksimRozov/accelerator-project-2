@@ -1,11 +1,15 @@
 .advantages {
-  padding-top: 38px;
+  padding-top: 36px;
 }
 
 .advantages__title {
   margin: 0;
   text-align: center;
   margin-bottom: 36px;
+
+  &::before {
+    left: 36px;
+  }
 }
 
 .advantages__carousel {

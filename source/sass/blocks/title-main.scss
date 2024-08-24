@@ -5,14 +5,13 @@
   color: $primary-color;
   position: relative;
 
-  &::after {
+  &::before {
     content: attr(data-title);
     display: inline-block;
     position: absolute;
     font-weight: 800;
     font-size: 26px;
     top: -16px;
-    left: 0;
     line-height: 100%;
     color: #2d383f;
     opacity: 0.03;

@@ -1,0 +1,38 @@
+.contacts-list {
+  @include list-style-none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 29px;
+}
+
+.contacts-list__item {
+  padding-left: 32px;
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+
+  &--tel {
+    background-image: url("../../__spritemap#sprite-phone-view");
+  }
+
+  &--mail {
+    background-image: url("../../__spritemap#sprite-mail-view");
+  }
+
+  &--address {
+    background-image: url("../../__spritemap#sprite-point-footer-view");
+  }
+}
+
+.contacts-list__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+
+.contacts-list__info {
+  font-size: 14px;
+  line-height: 143%;
+}

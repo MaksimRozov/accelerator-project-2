@@ -4,7 +4,7 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .reviews__carousel {
@@ -14,4 +14,9 @@
 .reviews__carousel-control-panel {
   position: absolute;
   top: -54px;
+}
+
+.reviews__carousel .reviews__slider {
+  padding: 5px 15px 2px;
+  width: 320px;
 }
