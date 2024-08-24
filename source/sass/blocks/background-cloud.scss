@@ -1,0 +1,22 @@
+.background-cloud {
+  /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+  background-image: image-set(
+    url("../../img/tours/clouds-mobile@1x.webp") type("image/webp") 1x,
+    url("../../img/tours/clouds-mobile@2x.webp") type("image/webp") 2x,
+    url("../../img/tours/clouds-mobile@1x.png") type("image/png") 1x,
+    url("../../img/tours/clouds-mobile@2x.png") type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: right -205px top 10px;
+
+  @media (min-width: $tablet-width) {
+    /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+    background-image: image-set(
+      url("../../img/tours/clouds-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/tours/clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/clouds-tablet@1x.png") type("image/png") 1x,
+      url("../../img/tours/clouds-tablet@2x.png") type("image/png") 2x
+    );
+    background-position: right -177px top -92px;
+  }
+}
