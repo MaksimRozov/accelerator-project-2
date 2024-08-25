@@ -41,5 +41,8 @@
 }
 
 .tours__carousel-control-panel {
-  top: -60px;
+  @media (min-width: $tablet-width) {
+    top: -60px;
+    right: 0;
+  }
 }

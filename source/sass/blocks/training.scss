@@ -69,7 +69,10 @@
 }
 
 .training__carousel-control-panel {
-  top: -64px;
+  @media (min-width: $tablet-width) {
+    top: -64px;
+    right: 0;
+  }
 
   @media (min-width: $desktop-width) {
     top: -55px;

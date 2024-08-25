@@ -1,15 +1,42 @@
 .main-footer {
   padding-top: 37px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+  }
 }
 
 .main-footer__title {
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .main-footer__contacts {
   margin-bottom: 30px;
+
+  p {
+    padding-right: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 43px;
+    margin-bottom: 40px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 507px;
+
+      br {
+        display: none;
+      }
+    }
+  }
 }
 
 .main-footer__logo {
@@ -21,6 +48,10 @@
 .main-footer__top {
   padding-bottom: 19px;
   border-bottom: 1px solid $primary-color-opacity-20;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 39px;
+  }
 }
 
 .main-footer__bottom {

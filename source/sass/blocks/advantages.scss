@@ -1,19 +1,33 @@
 .advantages {
   padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 84px;
+  }
 }
 
 .advantages__title {
   margin: 0;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 36px;
 
   &::before {
-    left: 36px;
+    left: -17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
   }
 }
 
 .advantages__carousel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }

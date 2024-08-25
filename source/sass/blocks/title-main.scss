@@ -4,6 +4,7 @@
   line-height: 100%;
   color: $primary-color;
   position: relative;
+  width: fit-content;
 
   &::before {
     content: attr(data-title);

@@ -5,6 +5,12 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 40px;
+  }
 }
 
 .contacts-list__item {
@@ -23,6 +29,11 @@
   &--address {
     background-image: url("../../__spritemap#sprite-point-footer-view");
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    background-size: 25px 23px;
+  }
 }
 
 .contacts-list__title {
@@ -30,9 +41,24 @@
   font-size: 14px;
   line-height: 100%;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
 }
 
 .contacts-list__info {
   font-size: 14px;
   line-height: 143%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+
+    br {
+      display: none;
+    }
+  }
 }

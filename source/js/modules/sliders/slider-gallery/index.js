@@ -14,6 +14,7 @@ const sliderGallery = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 1000,
+      loop: true,
 
       navigation: {
         nextEl: '.gallery__carousel-next',
