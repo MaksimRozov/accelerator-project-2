@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 84px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 209px;
+  }
 }
 
 .advantages__title {
@@ -29,5 +33,9 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

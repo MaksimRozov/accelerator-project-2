@@ -8,6 +8,7 @@
     content: "";
     display: block;
     height: 400px;
+    background-repeat: no-repeat;
     /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
     background-image: image-set(
       url("../../img/about/about-mobile@1x.webp") type("image/webp") 1x,
@@ -15,7 +16,6 @@
       url("../../img/about/about-mobile@1x.jpg") type("image/jpg") 1x,
       url("../../img/about/about-mobile@2x.jpg") type("image/jpg") 2x
     );
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,7 +35,24 @@
         url("../../img/about/about-tablet@1x.jpg") type("image/jpg") 1x,
         url("../../img/about/about-tablet@2x.jpg") type("image/jpg") 2x
       );
-      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 184px;
+
+    &::before {
+      flex: 1 0 46%;
+      height: 490px;
+      align-self: start;
+      margin-top: -45px;
+      /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+      background-image: image-set(
+        url("../../img/about/about-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/about/about-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/about/about-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../img/about/about-desktop@2x.jpg") type("image/jpg") 2x
+      );
     }
   }
 }
@@ -112,6 +129,35 @@
       width: 270px;
       line-height: 24px;
       margin-bottom: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 0 54%;
+    margin-left: -2px;
+
+    h2 {
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 59px;
+    }
+
+    h2::after {
+      font-size: 55px;
+      top: -41px;
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 17px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 157%;
+      width: 586px;
     }
   }
 }

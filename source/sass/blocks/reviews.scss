@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 73px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 215px;
+  }
 }
 
 .reviews__title {
@@ -24,6 +28,11 @@
     top: -47px;
     right: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -58px;
+    right: 120px;
+  }
 }
 
 .reviews__carousel .reviews__slider {
@@ -33,10 +42,18 @@
     padding: 14px 45px;
     width: unset;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 130px;
+  }
 }
 
 .reviews__carousel .reviews__item {
   @media (min-width: $tablet-width) {
     width: 83%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 67%;
   }
 }

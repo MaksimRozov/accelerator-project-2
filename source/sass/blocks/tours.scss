@@ -45,4 +45,8 @@
     top: -60px;
     right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -89px;
+  }
 }

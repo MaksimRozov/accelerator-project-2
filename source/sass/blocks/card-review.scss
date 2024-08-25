@@ -30,6 +30,19 @@
       margin-bottom: 26px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    p:last-child {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 .card-review__image {
@@ -40,6 +53,12 @@
 
     img {
       width: 186px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    img {
+      width: 257px;
     }
   }
 }
@@ -66,5 +85,9 @@
 .card-reviews__content {
   @media (min-width: $tablet-width) {
     padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
