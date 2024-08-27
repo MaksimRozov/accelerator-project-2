@@ -2,32 +2,47 @@
   padding-top: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 84px;
+    padding-top: 85px;
+    padding-bottom: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 209px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .advantages__title {
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 36px;
+  text-align: center;
 
   &::before {
-    left: -17px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
 .advantages__carousel {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  // grid-template-columns: 1fr;
   row-gap: 15px;
 
   @media (min-width: $tablet-width) {
@@ -37,5 +52,25 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.advantages__carousel .advantages__item {
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    max-width: 380px;
+    min-height: 329px;
+  }
+}
+
+.advantages__swiper {
+  position: relative;
+}
+
+.advantages__carousel-control-panel {
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    bottom: -85px;
+    transform: translateX(-50%);
   }
 }

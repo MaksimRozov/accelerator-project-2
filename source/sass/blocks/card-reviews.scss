@@ -1,4 +1,4 @@
-.card-review {
+.card-reviews {
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   border: 1px solid $white-color;
   padding: 20px;
@@ -45,8 +45,8 @@
   }
 }
 
-.card-review__image {
-  margin-bottom: 20px;
+.card-reviews__image {
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -63,7 +63,7 @@
   }
 }
 
-.card-review__author-title {
+.card-reviews__author-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
@@ -76,7 +76,7 @@
   }
 }
 
-.card-review__author-add-info {
+.card-reviews__author-add-info {
   font-weight: 300;
   font-size: 12px;
   line-height: 100%;

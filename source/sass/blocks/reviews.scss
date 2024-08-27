@@ -50,10 +50,12 @@
 
 .reviews__carousel .reviews__item {
   @media (min-width: $tablet-width) {
-    width: 83%;
+    width: unset;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 67%;
+.reviews__carousel .reviews__wrapper {
+  @media (min-width: $tablet-width) {
+    width: unset;
   }
 }

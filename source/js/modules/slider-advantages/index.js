@@ -4,28 +4,48 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+const createButton = (title, addClassMain, ...secondClasses) => {
+  const createButtonTag = document.createElement('button');
+  createButtonTag.setAttribute('type', 'button');
+  createButtonTag.innerHTML = `<span class="visually-hidden">${title}</span>`;
+  createButtonTag.classList.add(`${addClassMain}`, 'arrow-style-slider__button', ...secondClasses);
+  return createButtonTag;
+};
+
+const createButtonControl = () => {
+  const controlPanel = document.createElement('div');
+  controlPanel.classList.add('advantages__carousel-control-panel', 'arrow-style-slider');
+  const buttonPrev = createButton('Назад', 'advantages__carousel-prev', 'arrow-style-slider__button', 'arrow-style-slider__button--prev');
+  const buttonNext = createButton('Вперед', 'advantages__carousel-next', 'arrow-style-slider__button', 'arrow-style-slider__button--next');
+  controlPanel.append(buttonPrev, buttonNext);
+  return controlPanel;
+};
 
 const sliderAdvantages = () => {
 
   if (window.innerWidth > 1439) {
+    const controlPanel = createButtonControl();
+    const advantagesSwiper = document.querySelector('.advantages__swiper');
     const advantagesCarousel = document.querySelector('.advantages__carousel');
-
     const cardAdvantagesClassElement = document.querySelectorAll('.card-advantages');
+    const fragmentElement = document.createDocumentFragment();
+    advantagesSwiper.append(controlPanel);
 
     cardAdvantagesClassElement.forEach((element) => {
-      element.classList.add('swiper-slide');
+      element.classList.add('advantages__item', 'swiper-slide');
+      const copySlide = element.cloneNode(true);
+      fragmentElement.appendChild(copySlide);
     });
 
     const sliderWrapper = document.createElement('div');
-
     sliderWrapper.classList.add('advantages__slider', 'swiper');
-    const wrapper = document.createElement('div');
 
+    const wrapper = document.createElement('div');
     wrapper.classList.add('swiper-wrapper');
 
     while (advantagesCarousel.firstChild) {
-      const child = advantagesCarousel.firstChild;
-      wrapper.append(child);
+      const children = advantagesCarousel.firstChild;
+      wrapper.append(children, fragmentElement);
     }
 
     sliderWrapper.append(wrapper);
@@ -50,21 +70,21 @@ const sliderAdvantages = () => {
         },
 
         breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 5,
-            allowTouchMove: true
-          },
-
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 5,
-            allowTouchMove: true
-          },
-
           1440: {
-            slidesPerView: 3,
+            enabled: true,
+            // slidesPerView: 4,
+            centeredSlides: true,
             spaceBetween: 30,
+            grabCursor: true,
+            slidesPerView: 'auto',
+            slidesPerGroup: 2,
+            initialSlide: 3,
+            // // centeredSlides: true,
+            // slidesPerGroup: 2,
+            // // initialSlide: 3,
+            // slidesPerView: 'auto',
+            // spaceBetween: 30,
+            // // allowTouchMove: false,
           }
         },
 
