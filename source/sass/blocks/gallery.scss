@@ -3,7 +3,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
@@ -12,9 +12,13 @@
 }
 
 .gallery__carousel-control-panel {
-  position: absolute;
   top: -56px;
   right: 44px;
+
+  @media (min-width: $tablet-width) {
+    top: -55px;
+    right: 45px;
+  }
 }
 
 .gallery {
@@ -29,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 98px;
+    padding-top: 60px;
 
     p {
       max-width: 420px;

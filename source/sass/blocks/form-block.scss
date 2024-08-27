@@ -39,7 +39,7 @@
     );
     background-position: center center;
     min-height: 680px;
-    padding-top: 185px;
+    padding-top: 187px;
 
     h2 {
       font-size: 25px;
@@ -50,6 +50,7 @@
     p {
       font-size: 16px;
       margin-bottom: 23px;
+      white-space: break-spaces;
 
       br {
         display: none;
