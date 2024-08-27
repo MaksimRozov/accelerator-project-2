@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .gallery__carousel {
@@ -44,6 +48,43 @@
 
     img {
       height: 418px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 268px;
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      max-width: 600px;
+      margin-bottom: 45px;
+
+      br {
+        display: none;
+      }
+    }
+
+    img {
+      height: 463px;
+    }
+  }
+}
+
+.gallery__carousel .gallery__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 284px);
+    gap: 5px;
+  }
+}
+
+.gallery__carousel .gallery__item {
+  @media (min-width: $desktop-width) {
+    width: 284px;
+
+    img {
+      width: 284px;
     }
   }
 }
