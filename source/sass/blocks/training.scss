@@ -1,3 +1,10 @@
+.training {
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 39px;
+  }
+}
+
 .training__title {
   margin: 0;
   margin-bottom: 33px;

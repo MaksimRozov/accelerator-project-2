@@ -19,4 +19,8 @@
     );
     background-position: right -177px top -92px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: right 0 top -128px;
+  }
 }
