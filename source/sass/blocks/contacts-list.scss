@@ -11,6 +11,12 @@
     margin-top: 40px;
     gap: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 36px;
+  }
 }
 
 .contacts-list__item {
@@ -34,6 +40,12 @@
     padding-left: 34px;
     background-size: 25px 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 56px;
+    background-position: top 12px left;
+    background-size: 27px 25px;
+  }
 }
 
 .contacts-list__title {
@@ -46,6 +58,11 @@
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 11px;
   }
 }
 
@@ -60,5 +77,9 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
   }
 }
