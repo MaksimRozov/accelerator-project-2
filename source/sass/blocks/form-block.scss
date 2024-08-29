@@ -9,9 +9,7 @@
     url("../../img/form/form-mobile@2x.jpg") type("image/jpeg") 2x,
     url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x
   );
-  background-color: rgba(0, 0, 0, 0.2);
   background-size: cover;
-  background-position: top 0 left -36px;
   background-repeat: no-repeat;
   color: $white-color;
 
@@ -20,7 +18,7 @@
     font-size: 22px;
     line-height: 100%;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
   }
 
   p {
