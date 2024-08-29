@@ -91,6 +91,12 @@
     background-image: url("../../__spritemap#sprite-expertise-view");
   }
 
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     br {
       display: none;
