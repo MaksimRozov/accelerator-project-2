@@ -2,7 +2,7 @@
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 73px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +16,10 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 22px;
   }
 }
@@ -26,12 +30,12 @@
 
 .reviews__carousel-control-panel {
   @media (min-width: $tablet-width) {
-    top: -47px;
+    top: -44px;
     right: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -58px;
+    top: -55px;
     right: 120px;
   }
 }

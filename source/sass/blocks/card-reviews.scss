@@ -24,7 +24,7 @@
     gap: 30px;
     padding: 19px;
     max-width: 565px;
-    padding-left: 20px;
+    padding-top: 20px;
 
     p:last-child {
       margin-bottom: 26px;
@@ -84,7 +84,7 @@
 
 .card-reviews__content {
   @media (min-width: $tablet-width) {
-    padding-top: 3px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
