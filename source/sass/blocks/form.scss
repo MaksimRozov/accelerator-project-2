@@ -85,6 +85,10 @@
 .form__button {
   padding-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 180px;
     padding-bottom: 19px;
