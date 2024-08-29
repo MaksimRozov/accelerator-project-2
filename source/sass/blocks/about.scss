@@ -109,6 +109,10 @@
     margin-bottom: 26px;
   }
 
+  p:last-of-type {
+    margin-bottom: 23px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 0;
     flex: 1 0 41%;

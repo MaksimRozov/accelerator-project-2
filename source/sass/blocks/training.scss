@@ -159,6 +159,10 @@
   padding-right: 27px;
   padding-left: 63px;
 
+  &:last-child {
+    padding-bottom: 20px;
+  }
+
   br {
     display: none;
   }
@@ -233,6 +237,10 @@
     font-size: 14px;
     line-height: 157%;
     padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {

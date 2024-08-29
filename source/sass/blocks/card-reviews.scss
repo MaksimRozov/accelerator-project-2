@@ -2,8 +2,9 @@
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   border: 1px solid $white-color;
   padding: 20px;
-  padding-bottom: 16px;
   background-color: $white-color;
+  width: 290px;
+  padding-bottom: 14px;
 
   p {
     font-size: 12px;
@@ -13,10 +14,15 @@
 
   p:first-child {
     margin-bottom: 10px;
+    padding-right: 3px;
   }
 
   p:last-child {
     margin-bottom: 16px;
+  }
+
+  img {
+    width: 250px;
   }
 
   @media (min-width: $tablet-width) {
@@ -24,10 +30,15 @@
     gap: 30px;
     padding: 19px;
     max-width: 565px;
+    width: unset;
     padding-top: 20px;
 
     p:last-child {
       margin-bottom: 26px;
+    }
+
+    img {
+      width: unset;
     }
   }
 
