@@ -48,12 +48,42 @@
   border: 1px solid $primary-color-opacity-30;
   margin-top: -2px;
 
+  &:hover {
+    border: 1px solid #2d383f;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid $white-color;
+  }
+
+  &:active {
+    border: 1px solid $additional-color;
+    background-color: $additional-color;
+
+    &::after {
+      background-color: $white-color;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    border: 1px solid $primary-color-opacity-20;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     display: block;
     width: 14px;
     height: 8px;
-    background-image: url("../../__spritemap#sprite-vk-view");
+    mask-image: url("../../__spritemap#sprite-vk-view");
+    background-color: $primary-color;
   }
 }
 

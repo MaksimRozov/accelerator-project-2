@@ -7,6 +7,7 @@
   align-items: center;
   border: none;
   justify-content: center;
+  transition: 0.3s;
 
   &--main {
     font-weight: 500;
@@ -18,6 +19,35 @@
     padding-top: 21px;
     padding-bottom: 19px;
     background: $additional-color;
+    border: 1px solid $additional-color;
+
+    &:hover {
+      border: 1px solid #1c3374;
+      background: #ffffff;
+      color: #1c3374;
+      transition: 0.3s;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible {
+      border: 1px solid #ffffff;
+      background: #ffffff;
+      color: #1c3374;
+    }
+
+    &:active {
+      color: #ffffff;
+      background: #1c3374;
+    }
+
+    &:disabled {
+      color: #ffffff;
+      background: #999999;
+    }
   }
 }
 
@@ -31,12 +61,60 @@
   width: fit-content;
   margin: 0 auto;
   padding-right: 20px;
-  background-image: url("../../__spritemap#sprite-right-view");
-  background-position: right -7px center;
-  background-repeat: no-repeat;
-  background-size: 21px 14px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-right-view");
+    top: 0;
+    right: -2px;
+    background-color: #2d383f;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    color: hsla(209, 98%, 38%, 0.1);
+
+    &::after {
+      background-color: hsla(209, 98%, 38%, 0.1);
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #0266c1;
+
+    &::after {
+      background-color: #0266c1;
+    }
+  }
+
+  &:active {
+    color: #1c3374;
+
+    &::after {
+      background-color: #1c3374;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+  }
+}
+
+.button--more.disabled {
+  color: $disabled-color;
+  pointer-events: none;
+
+  &::after {
+    background-color: $disabled-color;
   }
 }

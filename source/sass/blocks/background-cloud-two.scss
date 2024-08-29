@@ -1,0 +1,13 @@
+.background-cloud-two {
+  @media (min-width: $desktop-width) {
+    /* stylelint-disable-next-line @stylistic/declaration-colon-newline-after */
+    background-image: image-set(
+      url("../../img/reviews/clouds-3.webp") type("image/webp") 1x,
+      url("../../img/reviews/clouds-3@2x.webp") type("image/webp") 2x,
+      url("../../img/reviews/clouds-3@1x.jpg") type("image/jpg") 1x,
+      url("../../img/reviews/clouds-3@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center top 315px;
+  }
+}

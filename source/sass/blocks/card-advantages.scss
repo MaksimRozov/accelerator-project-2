@@ -6,13 +6,14 @@
   background-size: 42px 42px;
   background-repeat: no-repeat;
   background-position: center top 18px;
+  background-color: $white-color;
 
   &::before {
     content: "";
     display: block;
     width: 42px;
     height: 42px;
-    border: 1px solid #0266c1;
+    border: 1px solid $additional-color;
     margin: 0 auto 20px;
     background-position: center;
     background-repeat: no-repeat;

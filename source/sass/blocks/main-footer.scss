@@ -28,6 +28,28 @@
 .main-footer__tel {
   display: none;
 
+  &:hover {
+    color: $additional-color-opacity-20;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $additional-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: $disabled-color;
+  }
+
   @media (min-width: $desktop-width) {
     font-weight: 600;
     font-size: 18px;
@@ -99,7 +121,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 114px;
+    column-gap: 109px;
     grid-template-columns: min-content 1fr 145px;
     margin-bottom: 19px;
   }
@@ -155,7 +177,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 31px;
+    gap: 21px;
   }
 }
 
@@ -167,9 +189,35 @@
   color: $primary-color;
   text-decoration: none;
   display: block;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $primary-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $primary-color;
+  }
+
+  &:active {
+    color: $additional-color;
+    border-bottom: none;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: $disabled-color;
+    pointer-events: none;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
+    padding: 3px 5px;
   }
 }
 
@@ -219,4 +267,33 @@
   align-items: center;
   justify-content: center;
   border: 1px solid $stroke-br-color;
+
+  &:hover {
+    border: 1px solid #2d383f;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+  }
+
+  &:active {
+    border: 1px solid #0266c1;
+    background-color: #0266c1;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    border: 1px solid #2d383f;
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }

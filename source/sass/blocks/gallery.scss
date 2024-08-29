@@ -76,6 +76,7 @@
     display: grid;
     grid-template-columns: repeat(5, 284px);
     gap: 5px;
+    justify-content: center;
   }
 }
 

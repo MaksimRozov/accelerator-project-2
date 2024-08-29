@@ -37,7 +37,7 @@
     display: block;
     order: 0;
     width: 625px;
-    margin-left: 152px;
+    margin-left: 159px;
     margin-top: 4px;
   }
 }
@@ -68,6 +68,28 @@
   color: $white-color;
   text-decoration: none;
   text-align: right;
+
+  &:hover {
+    color: $white-color-opacity-50;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: $disabled-color;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
