@@ -46,6 +46,7 @@
   text-transform: uppercase;
   color: $white-color;
   padding: 0;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom: 1px solid $white-color;

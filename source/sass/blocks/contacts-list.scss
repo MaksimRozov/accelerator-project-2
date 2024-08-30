@@ -10,6 +10,7 @@
     flex-direction: row;
     margin-top: 40px;
     gap: 40px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +70,8 @@
 .contacts-list__info {
   font-size: 14px;
   line-height: 143%;
+  text-decoration: none;
+  color: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

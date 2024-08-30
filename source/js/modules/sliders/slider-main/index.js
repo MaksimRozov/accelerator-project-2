@@ -27,6 +27,11 @@ const sliderMain = () => {
 
     });
 
+    const bulletElement = document.querySelectorAll('.main-carousel__dots');
+
+    bulletElement.forEach((button, index) => {
+      button.innerHTML = `<span class="visually-hidden">Переход на слайдер номер ${index + 1}</span>`;
+    });
 
     const setTabIndex = () => {
       swiperMain.slides[swiperMain.activeIndex].querySelector('a').setAttribute('tabindex', '0');

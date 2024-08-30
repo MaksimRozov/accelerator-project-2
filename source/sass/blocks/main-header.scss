@@ -45,6 +45,7 @@
 .main-header__burger {
   background-color: transparent;
   position: absolute;
+  top: 27px;
   border: none;
   padding: 0;
   width: 26px;
@@ -94,11 +95,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     margin-top: 3px;
+    width: 140px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     margin-left: auto;
+    width: 160px;
   }
 }
 
@@ -107,6 +110,10 @@
   width: 142px;
   margin-left: auto;
   margin-bottom: 16px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   svg {
     display: block;
