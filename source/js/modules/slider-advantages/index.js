@@ -72,19 +72,12 @@ const sliderAdvantages = () => {
         breakpoints: {
           1440: {
             enabled: true,
-            // slidesPerView: 4,
             centeredSlides: true,
             spaceBetween: 30,
             grabCursor: true,
             slidesPerView: 'auto',
             slidesPerGroup: 2,
             initialSlide: 3,
-            // // centeredSlides: true,
-            // slidesPerGroup: 2,
-            // // initialSlide: 3,
-            // slidesPerView: 'auto',
-            // spaceBetween: 30,
-            // // allowTouchMove: false,
           }
         },
 

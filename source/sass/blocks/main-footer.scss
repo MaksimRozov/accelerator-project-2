@@ -294,7 +294,7 @@
   border: 1px solid $stroke-br-color;
 
   &:hover {
-    border: 1px solid #2d383f;
+    border: 1px solid $primary-color;
   }
 
   &:focus,
@@ -303,21 +303,21 @@
   }
 
   &:focus-visible {
-    border: 1px solid #ffffff;
+    border: 1px solid $white-color;
   }
 
   &:active {
-    border: 1px solid #0266c1;
-    background-color: #0266c1;
+    border: 1px solid $additional-color;
+    background-color: $additional-color;
 
     svg {
-      fill: #ffffff;
+      fill: $white-color;
     }
   }
 
   &--disabled,
   &:disabled {
-    border: 1px solid #2d383f;
+    border: 1px solid $primary-color;
     pointer-events: none;
     opacity: 0.3;
   }

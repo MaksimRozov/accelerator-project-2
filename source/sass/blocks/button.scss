@@ -22,9 +22,9 @@
     border: 1px solid $additional-color;
 
     &:hover {
-      border: 1px solid #1c3374;
-      background: #ffffff;
-      color: #1c3374;
+      border: 1px solid $active-color;
+      background-color: $white-color;
+      color: $active-color;
       transition: 0.3s;
     }
 
@@ -34,19 +34,19 @@
     }
 
     &:focus-visible {
-      border: 1px solid #ffffff;
-      background: #ffffff;
-      color: #1c3374;
+      border: 1px solid $white-color;
+      background: $white-color;
+      color: $active-color;
     }
 
     &:active {
-      color: #ffffff;
-      background: #1c3374;
+      color: $white-color;
+      background: $active-color;
     }
 
     &:disabled {
-      color: #ffffff;
-      background: #999999;
+      color: $white-color;
+      background: $disabled-color;
     }
   }
 }
@@ -72,15 +72,15 @@
     mask-image: url("/__spritemap#sprite-right-view");
     top: 0;
     right: -2px;
-    background-color: #2d383f;
+    background-color: $primary-color;
     transition: 0.3s;
   }
 
   &:hover {
-    color: hsla(209, 98%, 38%, 0.1);
+    color: $additional-color-opacity-20;
 
     &::after {
-      background-color: hsla(209, 98%, 38%, 0.1);
+      background-color: $additional-color-opacity-20;
     }
   }
 
@@ -90,18 +90,18 @@
   }
 
   &:focus-visible {
-    color: #0266c1;
+    color: $additional-color;
 
     &::after {
-      background-color: #0266c1;
+      background-color: $additional-color;
     }
   }
 
   &:active {
-    color: #1c3374;
+    color: $active-color;
 
     &::after {
-      background-color: #1c3374;
+      background-color: $active-color;
     }
   }
 

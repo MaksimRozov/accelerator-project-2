@@ -42,7 +42,7 @@
   }
 
   &:focus-visible {
-    border: 1px solid #2d383f;
+    border: 1px solid $primary-color;
   }
 
   &:focus-visible::placeholder {
@@ -50,11 +50,11 @@
   }
 
   &:disabled {
-    border: 1px solid #999999;
+    border: 1px solid $disabled-color;
   }
 
   &--error {
-    border: 1px solid #ff121f;
+    border: 1px solid $error-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -101,5 +101,5 @@
 }
 
 .form__input:disabled + .form__label {
-  color: #999999;
+  color: $disabled-color;
 }

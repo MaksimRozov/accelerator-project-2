@@ -183,7 +183,7 @@
   cursor: pointer;
 
   &:hover:not(:disabled) {
-    border: 1px solid #ffffff;
+    border: 1px solid $white-color;
     background: #d9d9d9;
   }
 
@@ -198,7 +198,7 @@
   }
 
   &:active:not(:disabled) {
-    border: 1px solid #ffffff;
+    border: 1px solid $white-color;
     background: hsla(0, 0%, 100%, 0.5);
   }
 

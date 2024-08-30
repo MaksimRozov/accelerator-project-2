@@ -53,12 +53,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  // grid-template-columns: 1fr;
   row-gap: 15px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 
