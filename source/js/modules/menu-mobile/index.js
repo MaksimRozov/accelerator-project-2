@@ -13,6 +13,7 @@ const initNav = () => {
   const toggleNav = () => {
     const isOpen = menuElement.classList.toggle('main-header__navigation--open');
     bodyElement.classList.toggle('page__body--lock', isOpen);
+    buttonBurger.classList.toggle('main-header__burger--open', isOpen);
   };
 
   buttonBurger.addEventListener('click', toggleNav);
@@ -21,6 +22,7 @@ const initNav = () => {
     link.addEventListener('click', () => {
       menuElement.classList.remove('main-header__navigation--open');
       bodyElement.classList.remove('page__body--lock');
+      buttonBurger.classList.remove('main-header__burger--open');
     });
   });
 };

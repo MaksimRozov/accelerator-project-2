@@ -52,6 +52,10 @@
   height: 26px;
   background-image: url("../../__spritemap#sprite-burger-view");
 
+  &--open {
+    background-image: url("../../__spritemap#sprite-cross-view");
+  }
+
   @media (min-width: $tablet-width) {
     width: 26px;
     height: 28px;

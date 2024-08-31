@@ -27,27 +27,25 @@ const sliderMain = () => {
 
     });
 
-    const bulletElement = document.querySelectorAll('.main-carousel__dots');
+    const bulletElements = document.querySelectorAll('.main-carousel__dots');
 
-    bulletElement.forEach((button, index) => {
+    bulletElements.forEach((button, index) => {
       button.innerHTML = `<span class="visually-hidden">Переход на слайдер номер ${index + 1}</span>`;
     });
 
-    const setTabIndex = () => {
-      swiperMain.slides[swiperMain.activeIndex].querySelector('a').setAttribute('tabindex', '0');
+    const setTabIndex = (activeIndex) => {
+      swiperLinks.forEach((link, index) => {
+        link.setAttribute('tabindex', index === activeIndex ? '0' : '-1');
+      });
     };
 
-    for (const link of swiperLinks) {
-      link.setAttribute('tabindex', '-1');
-      setTabIndex();
-    }
+    // Устанавливаем tabindex для первого слайда по умолчанию
+    setTabIndex(swiperMain.activeIndex);
 
     swiperMain.on('activeIndexChange', () => {
-      for (const link of swiperLinks) {
-        link.setAttribute('tabindex', '-1');
-      }
-      setTabIndex();
+      setTabIndex(swiperMain.activeIndex);
     });
+
   }
 };
 
