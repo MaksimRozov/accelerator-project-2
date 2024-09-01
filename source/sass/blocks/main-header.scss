@@ -73,6 +73,8 @@
   color: $white-color;
   text-decoration: none;
   text-align: right;
+  width: 125px;
+  margin-left: auto;
 
   &:hover {
     color: $white-color-opacity-50;
@@ -100,6 +102,7 @@
     font-size: 16px;
     margin-top: 3px;
     width: 140px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
