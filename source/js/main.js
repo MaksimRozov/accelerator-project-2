@@ -5,6 +5,7 @@ import { sliderTraining } from './modules/sliders/slider-training';
 import { sliderReviews } from './modules/sliders/slider-reviews';
 import { sliderGallery } from './modules/sliders/slider-gallery';
 import { sliderAdvantages } from './modules/slider-advantages';
+import { validateForm } from './modules/form';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,5 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     sliderReviews();
     sliderGallery();
     sliderAdvantages();
+    validateForm();
   });
 });

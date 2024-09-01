@@ -13,6 +13,10 @@
   }
 }
 
+.form__error-text {
+  color: $error-color;
+}
+
 .form__item {
   position: relative;
 
@@ -32,7 +36,7 @@
     color: $additional-color;
   }
 
-  &:hover {
+  &:hover:not(.form__input--error) {
     border: 1px solid $additional-color;
   }
 
@@ -41,7 +45,7 @@
     outline: none;
   }
 
-  &:focus-visible {
+  &:focus-visible:not(.form__input--error) {
     border: 1px solid $primary-color;
   }
 
@@ -92,6 +96,7 @@
   @media (min-width: $desktop-width) {
     width: 180px;
     padding-bottom: 19px;
+    align-self: flex-start;
   }
 }
 

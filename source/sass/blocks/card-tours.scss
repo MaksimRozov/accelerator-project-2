@@ -13,7 +13,7 @@
 }
 
 .card-tour__content {
-  padding: 132px 20px 27px;
+  padding: 132px 20px 30px;
   position: relative;
   min-height: 416px;
   display: flex;
@@ -126,11 +126,24 @@
 }
 
 .card-tour__stars {
-  background-image: url("../../img/stars.png");
-  height: 19px;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
   width: 85px;
+  gap: 1px;
+}
+
+.card-tour__star {
+  height: 15px;
+  display: block;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-image: url("../../__spritemap#sprite-star-view");
+
+  &--active {
+    background-image: url("../../__spritemap#sprite-star-active-view");
+  }
 }
 
 .card-tour__item:first-of-type {

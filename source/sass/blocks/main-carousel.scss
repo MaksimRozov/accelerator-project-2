@@ -27,6 +27,34 @@
   }
 }
 
+.main-carousel__content p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 141%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+  }
+}
+
 .main-carousel__content {
   position: relative;
   padding-top: 144px;
@@ -53,39 +81,32 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 342px;
+
+    &--cards {
+      padding-top: 137px;
+
+      p {
+        padding: 0 60px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
     padding-top: 201px;
-  }
-}
 
-.main-carousel__content p {
-  margin: 0;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 133%;
+    &--cards {
+      display: flex;
 
-  br {
-    display: none;
+      h2 {
+        width: 882px;
+      }
 
-    @media (min-width: $tablet-width) {
-      display: block;
+      p {
+        padding-left: 0;
+        width: 550px;
+      }
     }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 17px;
-    line-height: 141%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 470px;
   }
 }
 
@@ -168,6 +189,7 @@
     max-width: 300px;
     margin-left: auto;
     right: 0;
+    padding-right: 0;
 
     --swiper-pagination-bottom: 92px;
   }
@@ -214,5 +236,29 @@
   @media (min-width: $tablet-width) {
     width: 20px;
     height: 20px;
+  }
+}
+
+.main-carousel__cards {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 442px;
+    height: 365px;
+    margin: 0 auto;
+    margin-top: 45px;
+
+    img {
+      width: unset;
+      height: unset;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 459px;
+    margin-top: -14px;
+    margin-left: -92px;
   }
 }
