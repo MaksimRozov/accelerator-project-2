@@ -77,4 +77,5 @@
 
 .arrow-style-slider__button--disabled {
   background-color: $disabled-color;
+  pointer-events: none;
 }

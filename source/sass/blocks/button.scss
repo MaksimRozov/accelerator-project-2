@@ -47,7 +47,16 @@
     &:disabled {
       color: $white-color;
       background: $disabled-color;
+      pointer-events: none;
+      border: 1px solid $disabled-color;
     }
+  }
+
+  &--disabled {
+    color: $white-color;
+    background: $disabled-color;
+    pointer-events: none;
+    border: 1px solid $disabled-color;
   }
 }
 
@@ -110,9 +119,11 @@
   }
 }
 
-.button--more.disabled {
+.button--more.button--disabled {
   color: $disabled-color;
   pointer-events: none;
+  background-color: transparent;
+  border: none;
 
   &::after {
     background-color: $disabled-color;

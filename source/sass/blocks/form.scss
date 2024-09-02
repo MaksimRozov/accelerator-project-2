@@ -30,13 +30,14 @@
   width: 100%;
   border: 1px solid $additional-color-opacity-20;
   border-radius: 2px;
+  background-color: $white-color;
 
   &::placeholder {
     opacity: 0;
     color: $additional-color;
   }
 
-  &:hover:not(.form__input--error) {
+  &:hover:not(.form__input--error):not(:disabled) {
     border: 1px solid $additional-color;
   }
 
@@ -53,8 +54,10 @@
     opacity: 1;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     border: 1px solid $disabled-color;
+    pointer-events: none;
   }
 
   &--error {

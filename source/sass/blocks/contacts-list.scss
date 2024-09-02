@@ -73,6 +73,15 @@
   text-decoration: none;
   color: inherit;
 
+  &:hover:not(.contacts-list__info--disabled)[href] {
+    opacity: 0.6;
+  }
+
+  &--disabled[href] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;

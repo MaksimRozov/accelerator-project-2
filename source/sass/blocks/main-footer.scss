@@ -28,28 +28,6 @@
 .main-footer__tel {
   display: none;
 
-  &:hover {
-    color: $additional-color-opacity-20;
-  }
-
-  &:focus,
-  &:focus-visible {
-    outline: none;
-  }
-
-  &:focus-visible {
-    color: $additional-color;
-  }
-
-  &:active {
-    color: $active-color;
-  }
-
-  &--disabled,
-  &:disabled {
-    color: $disabled-color;
-  }
-
   @media (min-width: $desktop-width) {
     font-weight: 600;
     font-size: 18px;
@@ -58,6 +36,29 @@
     display: block;
     color: $primary-color;
     text-decoration: none;
+
+    &:hover {
+      color: $additional-color-opacity-20;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: $additional-color;
+    }
+
+    &:active {
+      color: $active-color;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: $disabled-color;
+      pointer-events: none;
+    }
   }
 }
 
