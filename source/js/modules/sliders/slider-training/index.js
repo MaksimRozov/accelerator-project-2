@@ -25,7 +25,6 @@ const sliderTraining = () => {
           initialSlide: 2,
           slidesPerView: 1,
           spaceBetween: 15,
-
         },
 
         768: {

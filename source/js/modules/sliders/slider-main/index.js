@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 const mainCarouselElement = document.querySelector('.main-carousel');
 const swiperLinks = mainCarouselElement.querySelectorAll('a[href]');
 
-
 const sliderMain = () => {
   if (mainCarouselElement) {
     // eslint-disable-next-line no-unused-vars
@@ -48,19 +47,5 @@ const sliderMain = () => {
 
   }
 };
-
-
-// for (const link of swiperLinks) {
-//   link.setAttribute('tabindex', '-1');
-//   setTabIndex();
-// }
-
-// swiper.on('activeIndexChange', () => {
-//   for (const link of swiperLinks) {
-//     link.setAttribute('tabindex', '-1');
-//   }
-//   setTabIndex();
-// });
-
 
 export { sliderMain };

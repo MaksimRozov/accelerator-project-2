@@ -1,6 +1,6 @@
 import { bodyElement, menuElement, buttonBurger, menuLinks } from './variables';
 
-const toggleClass = () => {
+const onToggleClass = () => {
   const isOpen = menuElement.classList.toggle('main-header__navigation--open');
   bodyElement.classList.toggle('page__body--lock', isOpen);
   buttonBurger.classList.toggle('main-header__burger--open', isOpen);
@@ -17,7 +17,7 @@ const initNav = () => {
     return;
   }
 
-  buttonBurger.addEventListener('click', toggleClass);
+  buttonBurger.addEventListener('click', onToggleClass);
 
   menuLinks.forEach((link) => {
     link.addEventListener('click', () => {
